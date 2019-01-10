@@ -1,0 +1,27 @@
+<?php
+    $errors = array();
+    require('config.php');
+    require('database.php');
+    $link = db_Connect();
+    require('models/films.php');
+    require('functions/login_functions.php');
+
+    //Удаление фильма
+    if(!empty($_GET)) {
+        if(array_key_exists('action', $_GET)) {
+            $result = film_delete($link, $_GET['id']);
+            if($result)
+                $resultInfo = "<p>Фильм был удален</p>";
+            else
+                $resultError = "<p>Что-то пошло не так.</p>";
+        }
+    }
+
+    $filmInfo = get_film($link, $_GET['id']);
+
+    include('views/head.tpl');
+    include('views/notifications.tpl');
+    include('views/film-single.tpl');
+    include('views/footer.tpl');
+
+?>

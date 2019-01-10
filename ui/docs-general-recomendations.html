@@ -1,0 +1,90 @@
+<!-- Разные миксины по одному, которые понадобятся. Для логотипа, бейджа, и т.д.-->
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>UI-kit и HTML фреймворк - Документация</title>
+	<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"/><![endif]-->
+	<meta name="keywords" content="" />
+	<meta name="description" content="" /><!-- build:cssVendor css/vendor.css -->
+	<link rel="stylesheet" href="../libs/normalize-css/normalize.css" />
+	<link rel="stylesheet" href="../libs/bootstrap-4-grid/grid.min.css" />
+	<link rel="stylesheet" href="../libs/jquery-custom-scrollbar/jquery.custom-scrollbar.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" /><!-- endbuild -->
+	<!-- build:cssCustom css/main.css -->
+	<link rel="stylesheet" href="../css/main.css" /><!-- endbuild -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,800&amp;subset=cyrillic-ext" rel="stylesheet">
+	<!--[if lt IE 9]><script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+</head>
+
+<body class="body--dashboard">
+	<div class="left-panel blue-skin">
+		<div class="left-panel__section">
+			<div class="title-2">UI-KIT и PUG фреймворк</div>
+		</div>
+		<div class="left-panel__section">
+			<p class="strong">Документация</p>
+			<div class="left-panel-nav"><a class="left-panel-nav__link" href="docs.html">Документация</a><a class="left-panel-nav__link" href="docs-codestyle.html">Оформление кода</a><a class="left-panel-nav__link" href="docs-styleguide.html">Работа со стилями</a><a class="left-panel-nav__link" href="docs-general-recomendations.html">Общие рекомендации</a></div>
+		</div>
+		<div class="left-panel__section">
+			<p class="strong">Блоки</p>
+			<div class="left-panel-nav"><a class="left-panel-nav__link" href="avatars.html">Аватарки</a><a class="left-panel-nav__link" href="page-spinner.html">Анимация загрузки</a><a class="left-panel-nav__link" href="badges.html">Бейджи</a><a class="left-panel-nav__link" href="indicators.html">Индикаторы</a><a class="left-panel-nav__link" href="cards.html">Карточки</a><a class="left-panel-nav__link" href="buttons.html">Кнопки</a><a class="left-panel-nav__link" href="comments.html">Комментарий</a><a class="left-panel-nav__link" href="comment-register.html">Комментарий - зарегистрироваться</a><a class="left-panel-nav__link" href="comment-add.html">Комментарий - добавить</a><a class="left-panel-nav__link" href="typhography.html">Типографика</a><a class="left-panel-nav__link" href="notifications.html">Уведомления</a><a class="left-panel-nav__link" href="forms.html">Элементы формы</a></div>
+		</div>
+		<div class="left-panel__section">
+			<p class="strong">Секции</p>
+			<div class="left-panel-nav"><a class="left-panel-nav__link" href="section_comments.html">Комментарии</a><a class="left-panel-nav__link" href="comment-register.html">Комментарий регистрация</a><a class="left-panel-nav__link" href="pagination.html">Пагинация</a><a class="left-panel-nav__link" href="footer.html">Подвал сайта</a><a class="left-panel-nav__link" href="blog-post.html">Пост в блоге</a><a class="left-panel-nav__link" href="user-message.html">Сообщение от пользователя</a><a class="left-panel-nav__link" href="header.html">Шапка общая</a><a class="left-panel-nav__link" href="header-admin.html">Шапка администратора</a></div>
+		</div>
+		<div class="left-panel__section">
+			<p class="strong">Страницы</p>
+			<div class="left-panel-nav"><a class="left-panel-nav__link" href="../blog.html">Блог</a><a class="left-panel-nav__link" href="../blog-post.html">Блог пост</a><a class="left-panel-nav__link" href="../blog-post-edit.html">Блог пост - добавить</a><a class="left-panel-nav__link" href="../about-me.html">Обо мне</a><a class="left-panel-nav__link" href="../aboutme-edit-info.html">Обо мне - редактировать: информация</a><a class="left-panel-nav__link" href="../aboutme-edit-job.html">Обо мне - редактировать: опыт работы</a><a class="left-panel-nav__link" href="../aboutme-edit-tech.html">Обо мне - редактировать: технологии</a><a class="left-panel-nav__link" href="../contacts.html">Контакты</a><a class="left-panel-nav__link" href="../contacts-edit.html">Контакты - редактировать</a><a class="left-panel-nav__link" href="../feedback.html">Контакты - сообщения</a><a class="left-panel-nav__link" href="../profile.html">Профиль пользователя</a><a class="left-panel-nav__link" href="../profile-edit.html">Профиль пользователя - редактировать</a><a class="left-panel-nav__link" href="../team-portfolio.html">Работы</a><a class="left-panel-nav__link" href="../my-portfolio.html">Работы - персональные</a><a class="left-panel-nav__link" href="../page-add-projects.html">Работы - добавить</a><a class="left-panel-nav__link" href="../login.html">Вход на сайт</a><a class="left-panel-nav__link" href="../registration.html">Регистрация</a></div>
+		</div>
+	</div>
+	<div class="main-wrapper">
+		<div class="container container--left user-content pt-35">
+			<h1>Общие рекомендации</h1>
+			<h3>Не хранить фискированные значения в миксинах</h3>
+			<p>По возможности на загоняйте текст в миксины. Они должны принимать переменные.</p>
+			<p>Неправильно:</p>
+			<pre><code class="language-pug">mixin button(link)
+	a.button(href=link) Отправить
+</code></pre>
+			<p>Правильно:</p>
+			<pre><code class="language-pug">mixin button(link, title)
+	a.button(href= link) #{title}
+</code></pre>
+			<p>Если у вас в миксине большой блок текста, подумайте, можно ли его вынести в переменную.</p>
+			<p>Если в миксин надо передать большой блок текста или секцию с разметкой можно воспользоваться &quot;Mixin Blocks&quot;. Документация по нему: <a href="https://pugjs.org/language/mixins.html#mixin-blocks">https://pugjs.org/language/mixins.html#mixin-blocks</a></p>
+			<p>Если нельзя - тогда это просто кусок шаблона который надо пдключать через include</p>
+			<h3>Делить миксины по файлам</h3>
+			<p>Если в проекте много миксинов, имеет смысл разбить их на отдельные файлы. Например файл для миксинов с элементами форм, файл для миксинов с кнопками, и так далее.</p>
+			<pre><code>forms.pug
+errors.pug
+other.pug
+</code></pre>
+			<h3>Валидация форм</h3>
+			<p>Когда убирать ошибки. Например пользователь отправил пустую форму. Мы показали ему ошибку &quot;Email не может быть пустым&quot;. Убирать ошибку у поля необходимо в следующих случаях:</p>
+			<ul>
+				<li>Пользователь начал вводить текст в поле. Событие keydown.</li>
+				<li>Пользователь изменил значение поля (Ctrl + V, или через авто-подсказку в браузере или через автозаполнение) Событие on change.</li>
+			</ul>
+			<p>Если пользователь просто выбрал поле в фокус - то не стоит убирать ошибку. По возможности показывайте и скрывайте ошибку плавно. Через fadeIn и fadeOut.</p>
+			<p>Если у формы 2 поля для ввода, например email и пароль, и оба требуют заполнения то лучше при первой проверке сразу же показать ошибку для обоих полей. Нежели сначала показать ошибку насчет пустого Email, и только при повтроной отправке показывать ошибку для пустого Пароля. Идеально - показывать ошибку еще до отправки формы. Просот в момент если пользователь выбрал Email, ничего не ввел и переключился на пароль - запускать проверку на заполенность или валидность заполнения данного поля.</p>
+			<p>Формы должны отправляться не только по клику на кнопку, но и по нажатию на Enter.</p>
+			<p>Также сейчас у нашей формы не работает отправка по Enter. Поэтому все таки стоит ловить событие on('submit'), делать preventDefault И после когда надо делать уже настоящую отправку после валидации, то вызывать ее через <code>$('form').unbind('submit').submit();</code></p>
+			<p><code>unbind()</code> - Убирает предыдущий обработчик для события. Для того чтобы не запустить бесконечный цикл проверки и отправки формы.</p>
+			<h3>Навигация - ссылки или списки</h3>
+			<p>Если у вас только один уровень навигации тогда делаем просто ссылками внутри контейнера. Если в навигации будет вложенность. Второй уровень или более - тогда можно использовать списки.</p>
+			<h3>Текст внутри div</h3>
+			<p>Текст внутри div или span это нормально. Если речь не идет о абзацах. Во всех остальных случаях не имеет смысла дополнительно, робко оборачивать текст в абзацы, списки и другие теги - только ради их присутствия. Так как потом приходится избавляться от лишних отступов у абзацев или списков. Поэтому если в контейнере присутствует только одна строка текста, то нет никакого смысла оборачивать ее в тег <code>&lt;p&gt;</code> или в список.</p>
+		</div>
+	</div><!-- build:jsLibs js/libs.js -->
+	<script src="../libs/jquery/jquery.min.js"></script><!-- endbuild -->
+	<!-- build:jsVendor js/vendor.js -->
+	<script src="../libs/jquery-custom-scrollbar/jquery.custom-scrollbar.js"></script><!-- endbuild -->
+	<!-- build:jsMain js/main.js -->
+	<script src="../js/main.js"></script><!-- endbuild -->
+	<script defer="defer" src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+</body>
+
+</html>

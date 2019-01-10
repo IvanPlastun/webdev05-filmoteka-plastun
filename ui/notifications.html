@@ -1,0 +1,95 @@
+<!-- Разные миксины по одному, которые понадобятся. Для логотипа, бейджа, и т.д.-->
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Уведомления - UI-kit и HTML фреймворк - Документация</title>
+	<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"/><![endif]-->
+	<meta name="keywords" content="" />
+	<meta name="description" content="" /><!-- build:cssVendor css/vendor.css -->
+	<link rel="stylesheet" href="../libs/normalize-css/normalize.css" />
+	<link rel="stylesheet" href="../libs/bootstrap-4-grid/grid.min.css" />
+	<link rel="stylesheet" href="../libs/jquery-custom-scrollbar/jquery.custom-scrollbar.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" /><!-- endbuild -->
+	<!-- build:cssCustom css/main.css -->
+	<link rel="stylesheet" href="../css/main.css" /><!-- endbuild -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,800&amp;subset=cyrillic-ext" rel="stylesheet">
+	<!--[if lt IE 9]><script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+</head>
+
+<body class="body--dashboard">
+	<div class="left-panel blue-skin">
+		<div class="left-panel__section">
+			<div class="title-2">UI-KIT и PUG фреймворк</div>
+		</div>
+		<div class="left-panel__section">
+			<p class="strong">Документация</p>
+			<div class="left-panel-nav"><a class="left-panel-nav__link" href="docs.html">Документация</a><a class="left-panel-nav__link" href="docs-codestyle.html">Оформление кода</a><a class="left-panel-nav__link" href="docs-styleguide.html">Работа со стилями</a><a class="left-panel-nav__link" href="docs-general-recomendations.html">Общие рекомендации</a></div>
+		</div>
+		<div class="left-panel__section">
+			<p class="strong">Блоки</p>
+			<div class="left-panel-nav"><a class="left-panel-nav__link" href="avatars.html">Аватарки</a><a class="left-panel-nav__link" href="page-spinner.html">Анимация загрузки</a><a class="left-panel-nav__link" href="badges.html">Бейджи</a><a class="left-panel-nav__link" href="indicators.html">Индикаторы</a><a class="left-panel-nav__link" href="cards.html">Карточки</a><a class="left-panel-nav__link" href="buttons.html">Кнопки</a><a class="left-panel-nav__link" href="comments.html">Комментарий</a><a class="left-panel-nav__link" href="comment-register.html">Комментарий - зарегистрироваться</a><a class="left-panel-nav__link" href="comment-add.html">Комментарий - добавить</a><a class="left-panel-nav__link" href="typhography.html">Типографика</a><a class="left-panel-nav__link" href="notifications.html">Уведомления</a><a class="left-panel-nav__link" href="forms.html">Элементы формы</a></div>
+		</div>
+		<div class="left-panel__section">
+			<p class="strong">Секции</p>
+			<div class="left-panel-nav"><a class="left-panel-nav__link" href="section_comments.html">Комментарии</a><a class="left-panel-nav__link" href="comment-register.html">Комментарий регистрация</a><a class="left-panel-nav__link" href="pagination.html">Пагинация</a><a class="left-panel-nav__link" href="footer.html">Подвал сайта</a><a class="left-panel-nav__link" href="blog-post.html">Пост в блоге</a><a class="left-panel-nav__link" href="user-message.html">Сообщение от пользователя</a><a class="left-panel-nav__link" href="header.html">Шапка общая</a><a class="left-panel-nav__link" href="header-admin.html">Шапка администратора</a></div>
+		</div>
+		<div class="left-panel__section">
+			<p class="strong">Страницы</p>
+			<div class="left-panel-nav"><a class="left-panel-nav__link" href="../blog.html">Блог</a><a class="left-panel-nav__link" href="../blog-post.html">Блог пост</a><a class="left-panel-nav__link" href="../blog-post-edit.html">Блог пост - добавить</a><a class="left-panel-nav__link" href="../about-me.html">Обо мне</a><a class="left-panel-nav__link" href="../aboutme-edit-info.html">Обо мне - редактировать: информация</a><a class="left-panel-nav__link" href="../aboutme-edit-job.html">Обо мне - редактировать: опыт работы</a><a class="left-panel-nav__link" href="../aboutme-edit-tech.html">Обо мне - редактировать: технологии</a><a class="left-panel-nav__link" href="../contacts.html">Контакты</a><a class="left-panel-nav__link" href="../contacts-edit.html">Контакты - редактировать</a><a class="left-panel-nav__link" href="../feedback.html">Контакты - сообщения</a><a class="left-panel-nav__link" href="../profile.html">Профиль пользователя</a><a class="left-panel-nav__link" href="../profile-edit.html">Профиль пользователя - редактировать</a><a class="left-panel-nav__link" href="../team-portfolio.html">Работы</a><a class="left-panel-nav__link" href="../my-portfolio.html">Работы - персональные</a><a class="left-panel-nav__link" href="../page-add-projects.html">Работы - добавить</a><a class="left-panel-nav__link" href="../login.html">Вход на сайт</a><a class="left-panel-nav__link" href="../registration.html">Регистрация</a></div>
+		</div>
+	</div>
+	<div class="main-wrapper">
+		<div class="container container--left">
+			<div class="title">Уведомления</div>
+			<h2 class="mb-20">Обычные уведомления</h2>
+			<div class="notify notify--success">Успех</div>
+			<pre>+notification('Успех', 'success')
+</pre>
+			<div class="notify notify--update">Обновление</div>
+			<pre>+notification('Обновление', 'update')
+</pre>
+			<div class="notify notify--error">Ошибка</div>
+			<pre>+notification('Ошибка', 'error')
+</pre>
+			<h2 class="mb-10">Дополнительный класс</h2>
+			<h4 class="mb-10"> <em>например выравнивание теста по центру</em></h4>
+			<div class="notify notify--update text-center">Текст по цетнру</div>
+			<pre>+notification('Текст по цетнру', 'update')(class="text-center")
+</pre>
+			<h2 class="mb-10">Уведомления с комментариями</h2>
+			<h4 class="mb-10"><em>*необходимо наличие внутренненго контента</em></h4>
+			<div class="notify no-paddings">
+				<div class="notify no-radius-bottom notify--error">Ошибка</div>
+				<div class="notify no-radius-top">
+					<p>Используйте другой email чтобы создать новый аккаунт.</p>
+					<p>Или воспользуйтесь <a href="#!">восстановлением пароля </a>, чтобы войти на сайт. </p>
+				</div>
+			</div>
+			<pre>+notification('Ошибка', 'error')
+	p Используйте другой email чтобы создать новый аккаунт.
+	p 
+		| Или воспользуйтесь 
+		a(href="#!") восстановлением пароля 
+		|, чтобы войти на сайт. 
+</pre>
+			<div class="notify no-paddings">
+				<div class="notify no-radius-bottom notify--update">Уведомление</div>
+				<div class="notify no-radius-top">
+					<p>Ваши данные были изменены.</p>
+				</div>
+			</div>
+			<pre>+notification('Уведомление', 'update')
+	p Ваши данные были изменены.</pre>
+		</div>
+	</div><!-- build:jsLibs js/libs.js -->
+	<script src="../libs/jquery/jquery.min.js"></script><!-- endbuild -->
+	<!-- build:jsVendor js/vendor.js -->
+	<script src="../libs/jquery-custom-scrollbar/jquery.custom-scrollbar.js"></script><!-- endbuild -->
+	<!-- build:jsMain js/main.js -->
+	<script src="../js/main.js"></script><!-- endbuild -->
+	<script defer="defer" src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+</body>
+
+</html>
